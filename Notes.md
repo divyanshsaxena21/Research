@@ -81,26 +81,6 @@
 
 ---
 
-**Conclusion:**
-
-- The proposed stacking model effectively detects fraud in Bitcoin transactions.
-- Balancing techniques and hyperparameter tuning significantly enhance model performance.
-- The model is validated against various classifiers, demonstrating superior results.
-
----
-
-**Acknowledgment:**
-
-- The research was supported by the Researchers Supporting Project number (RSPD2023R295) at King Saud University.
-
----
-
-**References:**
-
-- The paper includes a comprehensive list of references related to fraud detection, machine learning, and blockchain technology.
-
-
-
 # Algorithm 1 Adaptive Synthetic-Tomek Link
 
 The Adaptive Synthetic-Tomek Link (AdaSyn-TL) algorithm is a method for handling imbalanced datasets. It combines two techniques: **Adaptive Synthetic Sampling** (AdaSyn) and **Tomek Links** to balance the dataset by generating synthetic samples and removing noisy samples. Here's a summary of how it works:
