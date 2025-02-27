@@ -10,13 +10,6 @@
 - Nabil Alrajeh
 - Mohsin Jamil
 
-**Publication Details:**
-
-- Date of publication: xxxx 00, 0000
-- DOI: 10.1109/ACCESS.2022.DOI
-
----
-
 **Abstract:**
 
 - Bitcoin is often associated with illegal activities (money laundering, dark web transactions, ransomware payments).
