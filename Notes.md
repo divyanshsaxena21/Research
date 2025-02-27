@@ -107,8 +107,6 @@
 - The paper includes a comprehensive list of references related to fraud detection, machine learning, and blockchain technology.
 
 
-## Federated Learning
-
 
 # Algorithm 1 Adaptive Synthetic-Tomek Link
 
@@ -140,3 +138,31 @@ the outliers. If outliers are found, they are removed.
 
 - Hyperparameter tuning is performed before classification. In the end, the model is evaluated using different performance indicators.
 
+### Using Hyperparameter tuning in Stacking Model
+
+![alt text](image.png)
+
+
+**Go to Page 20**
+
+
+
+# Conclusion
+
+- This paper presents the model for detecting fraud in Bitcoin transactions taking place in the smart cities.
+
+- Firstly, ==**381464 instances are extracted out of 2916697**== instances, by setting a threshold value on the year and the transfer amount.
+
+- The amount filter is used to exclude the instances that are outside the range and the year filter is used to exclude the data beyond the 2016 year.
+
+- After the data is gathered, we remove outliers from the
+data and then balance the dataset using ADASYN-TL, as the dataset is highly imbalanced.
+
+- Random search, grid search, and Bayesian optimization hyperparameter tuning techniques are used to find the specific value for the parameters of the classifier.
+
+- For classification, the stacking model is formed by combining DT, KNN, and NB on the base layer and using RF on the meta layer.
+
+- The performance of the proposed model is validated by
+comparing it with different classifiers. SHAP is used
+to provide the information about the impact of features
+on the model’s prediction.
