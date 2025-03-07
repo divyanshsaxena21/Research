@@ -239,3 +239,32 @@ Output:
 ```
 Switched to branch 'Divyansh'
 Your branch is up to date with 'origin/Divyansh'.
+
+```
+
+
+## Most Important Git Cyclic Flow
+
+Follow this cyclic flow to avoid warnings, errors, or wrong commits. Repeat these steps as a habit:
+
+1. **Add Files:**
+   ```bash
+   $ git add .
+   ```
+
+2. **Commit Changes:**
+   ```bash
+   $ git commit -m "<message>"
+   ```
+
+3. **Pull Latest Changes:**
+   ```bash
+   $ git pull
+   ```
+
+4. **Push Changes:**
+   ```bash
+   $ git push origin <branch_name>
+   ```
+
+**Note:** Don’t forget this cyclic flow to maintain a smooth workflow and avoid issues.
