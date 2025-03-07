@@ -9,7 +9,14 @@ Important note before using push command
 Please use 
 git pull origin <branch-name>
 ```
+```bash
+Make sure your local branch name must be same as the branch name in your github in which you are pushing 
 
+to check branch name in your local machine 
+1) open terminal(cmd,powershell,vscode terminal,etc)
+git branch
+the above command shows your branch name 
+```
 Here are some of the basic Git commands you'll need for version control:
 
 ### *Setup and Configuration*
