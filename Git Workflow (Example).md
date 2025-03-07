@@ -12,7 +12,16 @@ $ git clone <repository-url>
 ```
 
 **Example:**
-*git clone -b Divyansh https://github.com/divyanshsaxena21/Research.git*
+*git clone https://github.com/divyanshsaxena21/Research.git*
+
+      --> NOTE:  This will clone the **MAIN branch**
+
+## ****Instead of this Clone your Specific Branch using...****
+
+**Command:**
+```bash
+$ git clone -b <branch-name> <repository-url>
+```
 
 Output:
 ```
@@ -28,6 +37,17 @@ Resolving deltas: 100% (12/12), done.
 ---
 
 ## 2. Opening the Project in VS Code
+
+
+#### --> Open CMD at the Correct Directory where you cloned the Repository
+
+![Alt Text for the Image](images/open-cmd.png)
+
+
+![Alt Text for the Image](images/write-cmd.png)
+
+### --> Press ENTER, then on CMD prompt write...
+
 
 **Command:**
 ```bash
