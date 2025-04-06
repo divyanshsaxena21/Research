@@ -1,4 +1,40 @@
-# Research
+# 💡 Stacked Ensemble Models for Financial & Blockchain Intelligence
+
+## 📚 Research Papers
+
+1. **Detecting Anomalies in Blockchain Transactions Using Machine Learning for Explainability Analysis**  
+   - This paper explores the use of ML models to identify irregular patterns and enhance explainability in blockchain systems.
+
+2. **FinRL: A Large Language Model for Financial Reasoning through Reinforcement Learning**  
+   - Focuses on integrating financial reasoning with reinforcement learning, influencing the model architecture for financial data analysis.
+
+---
+
+## 🤖 Model Architectures
+
+### 🌟 Model 1
+
+- **Type**: Stacking Ensemble  
+- **Base Models**:  
+  - LightGBM  
+  - Random Forest  
+  - XGBoost  
+- **Meta Model**: Gradient Boosting Classifier  
+- **Accuracy**: **99.99%**
+
+---
+
+### 💼 Model 2
+
+- **Type**: Stacking Ensemble  
+- **Base Models**:  
+  - Logistic Regression  
+  - Random Forest  
+  - XGBoost  
+- **Meta Model**: Logistic Regression  
+- **Accuracy**: **98.10%**
+
+<!-- # Research
 
 
 ### Make your own branch and put your material in it, so that others can access it and refer.
@@ -126,4 +162,4 @@ Here are some of the basic Git commands you'll need for version control:
 5. *Push tags to the remote repository*
    - git push origin <tag-name>
 
-These are just some of the most basic and commonly used Git commands to get you started with version control!
+These are just some of the most basic and commonly used Git commands to get you started with version control! -->
