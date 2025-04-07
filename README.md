@@ -14,25 +14,88 @@
 
 ### 🌟 Model 1
 
-- **Type**: Stacking Ensemble  
-- **Base Models**:  
-  - LightGBM  
-  - Random Forest  
-  - XGBoost  
-- **Meta Model**: Gradient Boosting Classifier  
-- **Accuracy**: **99.99%**
+- **Type:** Stacking Ensemble Classifier  
+
+- **Base Models:**  
+  - 💡 **LightGBM**  
+    - `n_estimators=200`  
+    - `learning_rate=0.05`  
+    - `random_state=42`  
+  - 🌳 **Random Forest**  
+    - `n_estimators=200`  
+    - `random_state=42`  
+  - ⚡ **XGBoost**  
+    - `n_estimators=200`  
+    - `learning_rate=0.05`  
+    - `random_state=42`  
+
+- **Meta Model:**  
+  - 🌟 **Gradient Boosting Classifier**  
+    - `n_estimators=100`  
+    - `learning_rate=0.1`  
+    - `random_state=42`  
+
+- **Data Details:**  
+  - 📂 **Dataset:** `dataset.csv`  
+  - 🎯 **Target:** Last column (binned into 5 classes using equal-width binning)  
+  - 🧼 **Preprocessing:**  
+    - Dropped rows with missing target values  
+    - Replaced special characters in column names with underscores  
+  - 🔀 **Train/Test Split:** 80% train, 20% test (`random_state=42`)  
+
+- **Training:**  
+  - 🤹‍♂️ **StackingCV:** 5-fold cross-validation (`cv=5`)  
+  - 🧠 **Model Trained On:** Cleaned and binned data  
+
+- **Activation Functions / Optimizers:**  
+  - ❌ Not applicable (tree-based models)  
+
+- **Evaluation:**  
+  - 📈 **Metric Used:** Accuracy  
+  - 🔥 **Achieved Accuracy:** **99.99%**
+
 
 ---
 
-### 💼 Model 2
+### 🌟 Model 2
 
-- **Type**: Stacking Ensemble  
-- **Base Models**:  
-  - Logistic Regression  
-  - Random Forest  
-  - XGBoost  
-- **Meta Model**: Logistic Regression  
-- **Accuracy**: **98.10%**
+- **Type:** Individual Classifiers with Preprocessing + Stacking Potential  
+
+- **Models Used:**  
+  - 💼 **Logistic Regression**  
+    - `max_iter=1000`  
+    - `random_state=42`  
+  - 🌳 **Random Forest**  
+    - `n_estimators=100`  
+    - `random_state=42`  
+  - ⚡ **XGBoost**  
+    - `n_estimators=100`  
+    - `use_label_encoder=False`  
+    - `eval_metric="logloss"`  
+    - `random_state=42`  
+
+- **Data Details:**  
+  - 📂 **Dataset:** `dataset.csv`  
+  - 🧽 **Preprocessing:**  
+    - Dropped column: `"Unnamed: 0"` (if present)  
+    - Removed duplicate rows  
+    - Handled missing values using `SimpleImputer(strategy='mean')`  
+    - Standardized features using `StandardScaler()`  
+  - 🔀 **Train/Test Split:** 80% train, 20% test (`random_state=42`)  
+
+- **Training:**  
+  - 🧠 All models trained independently on preprocessed data  
+
+- **Evaluation Metric:**  
+  - 📈 **Metric Used:** Accuracy  
+
+- **Achieved Accuracies:**  
+  - 💼 **Logistic Regression:** `0.9654`  
+  - 🌳 **Random Forest:** `0.9798`  
+  - ⚡ **XGBoost:** `0.9776`  
+
+
+
 
 <!-- # Research
 
